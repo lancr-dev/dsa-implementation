@@ -94,4 +94,12 @@ console.log(users);
 // sort objects by name:
 users.sort((a, b) => a.name.localeCompare(b.name));
 
-arr.reduce();
+// REDUCE
+arr.reduce(); // takes all elements of an array and reduces them into a single value.
+// Use reduce() when you want to convert an array into one final value such as Sum, Avergae, Max/Min
+// examples:
+const arrForReduceMethod = [1, 2, 3, 4, 5];
+const sum = arrForReduceMethod.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log(sum);
